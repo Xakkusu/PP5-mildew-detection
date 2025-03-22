@@ -54,7 +54,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
-- List here your project hypothesis(es) and how you envision validating it (them).
+- We suspect that leaves that are infected by mildew have a visible differentiation from non-infected leaves which commonly looks like a white powdery substance on the leaves. This way we can differentiate healthy from infected leaves with an average image study using image classification, a binary classifier with an 97 % accuracy.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
