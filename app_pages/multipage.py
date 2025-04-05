@@ -1,11 +1,12 @@
 import streamlit as st
 
+# code for Data Visualization and its functions were adapted and
+# taken from Walkthrough Project 01 Malaria Detector 
 
-# code for Data Visualization and its functions were adapted and taken from Walkthrough Project 01 Malaria Detector 
-
-# Class to generate multiple Streamlit pages using an object oriented approach
 class MultiPage:
-
+    """
+    Class to generate multiple Streamlit pages using an object oriented approach
+    """
     def __init__(self, app_name) -> None:
         self.pages = []
         self.app_name = app_name
