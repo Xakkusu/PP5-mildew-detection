@@ -12,36 +12,59 @@ import random
 # code for Data Visualization and its functions were adapted and taken from Walkthrough Project 01 Malaria Detector 
 
 def page_leaves_visualizer_body():
+    """
+    This function displays the difference between average and variability
+    of healthy and mildew infected images, as well as calling the
+    image_montage function
+    """
     st.write("### Mildew Leaves Visualizer")
+
+    st.write(
+        f"For more information on how the model was created and on the general process of this "
+        f"project please read through the documentation in this project's "
+        f"[README file](https://github.com/Xakkusu/PP5-mildew-detection)")
+    
     st.info(
-        f"fill this in later")
+        f"As mentioned in the business requirements our client, Farmy & Foods, is interested in "
+        f"a model which can differentiate visually between a powdery mildew infected "
+        f"leaf image and a healthy one.\n\n"
+        f"Different analyses were conducted to analyze possible factors that differ between the two types.")
+    
+    st.success(
+        f"This dashboards focuses on answering the first business requirement:\n\n"
+        f"**The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew**"
+    )
+
+    st.write("---")
     
     version = 'v2'
-    if st.checkbox("Difference between average and variability image"):
+    if st.checkbox("**Difference between average and variability image**"):
       
       avg_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
       avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
       st.warning(
-        f"* We notice the average and variability images did  show "
-        f"patterns where we could intuitively differentiate one from another. " 
-        f"The mildew infected one has a whitish powder instead of being vibrant green like the healthy one.")
+        f"We notice the average and variability images did not show "
+        f"strong significant patterns where we could intuitively differentiate one from another.\n\n" 
+        f"*Yet, the mildew infected one has a whitish looking top-powder "
+        f"instead of being vibrant green like the healthy one which can be used for the model.*")
 
-      st.image(avg_mildew, caption='Mildew Infected Leavee - Average and Variability')
-      st.image(avg_healthy, caption='Healthy Leave - Average and Variability')
+      st.image(avg_mildew, caption='Mildew Infected Leaf - Average and Variability')
+      st.image(avg_healthy, caption='Healthy Leaf - Average and Variability')
       st.write("---")
 
-    if st.checkbox("Differences between average milde infected and average healthy cells"):
+    if st.checkbox("**Differences between average mildew infected and average healthy leaves**"):
           diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
           st.warning(
-            f"* There is again a slight difference, as mildew infected average shows a "
-            f"pattern where we can intuitively differentiate it from healthy one"
-            f"due to a slightly white top coat..")
+            f"We notice that this analysis didn't show a strong significant pattern to differentiate healthy- and infected leaves from one another.\n\n"
+            f"*Yet again, there is a slight difference, where the mildew infected average "
+            f"image displays a pattern where we can somehow differentiate it from the healthy one"
+            f"due to the slightly white top coat spots*.")
           st.image(diff_between_avgs, caption='Difference between average images')
 
     #created our image montage
-    if st.checkbox("Image Montage"): 
+    if st.checkbox("**Show Image Montage of mildew infected or average healthy leaves**"): 
       st.write("* To refresh the montage, click on the 'Create Montage' button")
       my_data_dir = 'inputs/dataset/cherry_leaves_dataset/cherry-leaves'
       labels = os.listdir(my_data_dir+ '/validation')
