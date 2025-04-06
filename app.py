@@ -9,7 +9,7 @@ from app_pages.page_leaves_detector import page_leaves_detector_body
 from app_pages.page_leaves_project_hypothesis import page_leaves_project_hypothesis_body
 from app_pages.page_leaves_ml_performance import page_leaves_ml_performance_body
 
-app = MultiPage(app_name="Mildew Detetor")  # Create an instance of the app
+app = MultiPage(app_name="Mildew Detector")  # Create an instance of the app
 
 # Add your app pages here using .add_page()
 app.add_page("Mildew Project Summary", page_leaves_summary_body)

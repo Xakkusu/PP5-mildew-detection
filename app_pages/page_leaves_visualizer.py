@@ -17,7 +17,7 @@ def page_leaves_visualizer_body():
     of healthy and mildew infected images, as well as calling the
     image_montage function
     """
-    st.write("### Mildew Leaves Visualizer")
+    st.header("Mildew Leaves Visualizer")
 
     st.write(
         f"For more information on how the model was created and on the general process of this "
