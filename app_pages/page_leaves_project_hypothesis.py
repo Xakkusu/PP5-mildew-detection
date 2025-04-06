@@ -25,7 +25,7 @@ def page_leaves_project_hypothesis_body():
 
     st.info(
         f" We were able to create a model with an **99,66%** accuray to predict whether "
-        f"an image of a leave has powdery mildew on the leave or not.\n\n"
+        f"an image of a leaf has powdery mildew on the leaf or not.\n\n"
         f"**With this accuracy we were able to prove our hypothesis that there is a visible differentiation "
         f"from non-infected leaves and powdery mildew infected leaves on which our ML model was build on.**"
     )

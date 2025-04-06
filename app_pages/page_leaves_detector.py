@@ -13,17 +13,29 @@ from src.machine_learning.predictive_analysis import (
                                                     )
 
 def page_leaves_detector_body():
+    """"
+    This function creates the ability for the user to upload their own PNG
+    image and detect through the model if there is powdery mildew
+    present on  the image or not
+    """
+    st.header("Powdery Mildew Detection Tool")
+    
     st.info(
-        f"fill this in later"
+        f"Our client is interested in detecting whether a leaf in an image is powdery-mildew "
+        f"infected or not."
         )
 
-    st.write(
-        f"fill this in later"
+    st.warning(
+        f"If you should not have your own cherry leaf image to run the detection on, "
+        f"please download an image from the [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) "
+        f"dataset and use it below.\n\n"
+        f"*As our model was build on this dataset so we know the format of them works and "
+        f"this format can be applied on the client images.*"
         )
 
     st.write("---")
 
-    images_buffer = st.file_uploader('Upload a leaes sample. You may select more than one.',
+    images_buffer = st.file_uploader('Upload a leaf sample image (.png). You may select more than one.',
                                         type='png',accept_multiple_files=True)
    
     if images_buffer is not None:
@@ -31,7 +43,7 @@ def page_leaves_detector_body():
         for image in images_buffer:
 
             img_pil = (Image.open(image))
-            st.info(f"Blood Smear Sample: **{image.name}**")
+            st.info(f"Leaf image: **{image.name}**")
             img_array = np.array(img_pil)
             st.image(img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
 
