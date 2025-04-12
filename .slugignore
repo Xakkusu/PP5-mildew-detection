@@ -1,5 +1,14 @@
+core.Microsoft*
+core.mongo*
+core.python*
+env.py
+__pycache__/
+*.py[cod]
+node_modules/
+.github/
 jupyter_notebooks
 outputs/v1
 inputs/dataset/cherry_leaves_dataset/cherry-leaves/test
 inputs/dataset/cherry_leaves_dataset/cherry-leaves/train
+inputs/dataset/cherry_leaves_dataset/cherry-leaves/validation
 README.md
