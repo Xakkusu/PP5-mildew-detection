@@ -1,4 +1,5 @@
-# code for Data Visualization and its functions were adapted and taken from Walkthrough Project 01 Malaria Detector 
+# code for Data Visualization and its functions were adapted and
+# taken from Walkthrough Project 01 Malaria Detector
 
 import streamlit as st
 import numpy as np
