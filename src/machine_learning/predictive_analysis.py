@@ -39,7 +39,6 @@ def plot_predictions_probabilities(pred_proba, pred_class):
     st.plotly_chart(fig, key=random.sample(keys, 1))
 
 
-
 def resize_input_image(img, version):
     """
     Reshape image to average image size
