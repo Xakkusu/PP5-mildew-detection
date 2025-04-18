@@ -1,42 +1,38 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Template Instructions
+# Mildew Detection in Cherry Tree Leaves
 
-Welcome,
+[Mildew Detector - Deployed Website](https://pp5-mildew-detection.onrender.com/)
 
-This is the Code Institute student template for the Cherry Leaves project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+Text with short summary of project
 
-## How to use this repo
 
-1. Use this template to create your GitHub project repo
+## Contents
+- [Mildew Detection in Cherry Tree Leaves](#mildew-detection-in-cherry-tree-leaves)
+  - [Contents](#contents)
+  - [Dataset Content](#dataset-content)
+  - [Business Requirements](#business-requirements)
+  - [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
+  - [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+  - [User Experience](#user-experience)
+  - [ML Business Case](#ml-business-case)
+  - [Dashboard Design](#dashboard-design)
+    - [Summary Page](#summary-page)
+    - [Leaves Visualizer Page](#leaves-visualizer-page)
+    - [Mildew Detection Page](#mildew-detection-page)
+    - [Project Hypothesis Page](#project-hypothesis-page)
+    - [ML Performance Metrics Page](#ml-performance-metrics-page)
+  - [Unfixed Bugs](#unfixed-bugs)
+  - [Deployment](#deployment)
+    - [Render](#render)
+  - [Testing](#testing)
+  - [Fixed Bugs](#fixed-bugs)
+  - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
-1. In your newly created repo click on the green Code button. 
-
-1. Then, from the Codespaces tab, click Create codespace on main.
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and `pip3 install -r requirements.txt`
-
-1. Open the jupyter_notebooks directory, and click on the notebook you want to open.
-
-1. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.12.1 as it inherits from the workspace, so it will be Python-3.12.1 as installed by Codespaces. To confirm this, you can use `! python --version` in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, then you can create a new one with _Regenerate API Key_.
 
 ## Dataset Content
 
@@ -60,6 +56,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 - List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
 
+## User Experience
+
 ## ML Business Case
 
 - In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
@@ -69,13 +67,24 @@ To save time in this process, the IT team suggested an ML system that detects in
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 - Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
+### Summary Page
+
+### Leaves Visualizer Page
+
+### Mildew Detection Page
+
+### Project Hypothesis Page
+
+### ML Performance Metrics Page
+
+
 ## Unfixed Bugs
 
 - You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
 ## Deployment
 
-### Heroku
+### Render
 
 - The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
@@ -87,6 +96,10 @@ To save time in this process, the IT team suggested an ML system that detects in
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
 6. If the slug size is too large, then add large files not required for the app to the .slugignore file.
+
+## Testing
+
+## Fixed Bugs
 
 ## Main Data Analysis and Machine Learning Libraries
 
@@ -108,6 +121,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 - The photos used on the home and sign-up page are from This Open-Source site.
 - The images used for the gallery page were taken from this other open-source site.
 
-## Acknowledgements (optional)
+## Acknowledgements
 
 - Thank the people who provided support throughout this project.
