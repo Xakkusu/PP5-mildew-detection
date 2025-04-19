@@ -181,4 +181,8 @@ The client is interested in predicting if a cherry tree is healthy or contains p
 
 ## Acknowledgements
 
-- Thank the people who provided support throughout this project.
+- My mentor Mo Shami for their guidance and support.
+- Code Institute for course material.
+- The Code Institute's Slack community for support.
+- All students with whom I was able to exchange ideas for our projects.
+- My cats
