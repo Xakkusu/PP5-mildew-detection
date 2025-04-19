@@ -48,7 +48,7 @@ def page_leaves_project_hypothesis_body():
 
     st.write("---")
 
-    st.write("#### Hypothesis 2")
+    st.write("#### Hypothesis 3")
 
     st.success(
         f"We suspect that we can differentiate healthy from infected leaves "
@@ -56,7 +56,7 @@ def page_leaves_project_hypothesis_body():
         f"classification, a binary classifier with an *97 % accuracy.*\n"
     )
 
-    st.write("#### Validation 2")
+    st.write("#### Validation 3")
 
     st.info(
         f"We were able to create a model with an **98,93%** accuray to "

@@ -12,7 +12,13 @@ Text with short summary of project
   - [Contents](#contents)
   - [Dataset Content](#dataset-content)
   - [Business Requirements](#business-requirements)
-  - [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
+  - [Project Hypotheses and Validation](#project-hypotheses-and-validation)
+    - [Hypothesis 1](#hypothesis-1)
+    - [Validation 1](#validation-1)
+    - [Hypothesis 2](#hypothesis-2)
+    - [Validation 2](#validation-2)
+    - [Hypothesis 3](#hypothesis-3)
+    - [Validation 3](#validation-3)
   - [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
   - [User Experience](#user-experience)
   - [ML Business Case](#ml-business-case)
@@ -22,11 +28,12 @@ Text with short summary of project
     - [Mildew Detection Page](#mildew-detection-page)
     - [Project Hypothesis Page](#project-hypothesis-page)
     - [ML Performance Metrics Page](#ml-performance-metrics-page)
-  - [Unfixed Bugs](#unfixed-bugs)
+  - [Bugs](#bugs)
+    - [Fixed Bugs](#fixed-bugs)
+    - [Unfixed Bugs](#unfixed-bugs)
   - [Deployment](#deployment)
     - [Render](#render)
   - [Testing](#testing)
-  - [Fixed Bugs](#fixed-bugs)
   - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
   - [Credits](#credits)
     - [Content](#content)
@@ -48,9 +55,36 @@ To save time in this process, the IT team suggested an ML system that detects in
 - 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-## Hypothesis and how to validate?
+## Project Hypotheses and Validation
 
-- We suspect that leaves that are infected by mildew have a visible differentiation from non-infected leaves which commonly looks like a white powdery substance on the leaves. This way we can differentiate healthy from infected leaves with an average image study using image classification, a binary classifier with an 97 % accuracy.
+### Hypothesis 1
+
+We suspect that there is a visual difference between healthy and mildew-infected leaves.
+
+
+### Validation 1
+
+Even though it was not a significant difference to the human eye there was a slight visual difference as can be seen on the average and variability images.
+
+
+### Hypothesis 2
+
+We suspect that the visual differentiation manifests in that leaves that are infected by mildew have a visible differentiation from non-infected leaves which commonly looks like a white powdery substance on the leaves compared to healthy green leaves.
+
+### Validation 2
+
+As can be seen on the leaves visualizer dashboard the mildew infected leaves have white powdery spots on its topcoat and they are less vibrant/saturated greenish than the healthy leaves images.
+
+
+### Hypothesis 3
+
+We suspect that we can differentiate healthy from infected leaves through an ML model with an average image study using image classification, a binary classifier with an 97 % accuracy.
+
+### Validation 3
+
+We were able to create a model with an 98,93% accuray to predict whether an image of a leaf has powdery mildew on the leaf or not.
+With this accuracy we were able to prove our hypothesis that there is a visible differentiation from mildew infected leaves on which our ML model was built on. Even non-infected leaves and powdery to the human eyes the pattern of the though average/variability images was not that significant using the ML-model will minimize human error during harvest.
+
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
@@ -78,7 +112,11 @@ To save time in this process, the IT team suggested an ML system that detects in
 ### ML Performance Metrics Page
 
 
-## Unfixed Bugs
+## Bugs
+
+### Fixed Bugs
+
+### Unfixed Bugs
 
 - You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
@@ -98,8 +136,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 6. If the slug size is too large, then add large files not required for the app to the .slugignore file.
 
 ## Testing
-
-## Fixed Bugs
 
 ## Main Data Analysis and Machine Learning Libraries
 
