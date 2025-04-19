@@ -51,7 +51,7 @@ def page_leaves_project_hypothesis_body():
     st.write("#### Hypothesis 3")
 
     st.success(
-        f"We suspect that we can differentiate healthy from infected leaves "
+        f"* We suspect that we can differentiate healthy from infected leaves "
         f"through an ML model with an average image study using image "
         f"classification, a binary classifier with an *97 % accuracy.*\n"
     )

@@ -3,9 +3,14 @@
 
 [Mildew Detector - Deployed Website](https://pp5-mildew-detection.onrender.com/)
 
+This "Mildew Detector" project used machine learning to predict whether cherry leaves on uploaded images are mildew-infected or not.
+Powdery mildew is among the most prevalent crop diseases worldwide. Especially for the agricultural sector, eg. for cherry trees, this infection can cause great harm to crops and minimize the harvest. 
+While farmers face an increasing number of hurdles during their work, especially with accelerating climate factors, there are some topics where machine learning models can take pressure from other time consuming daily tasks.
+That is why it is important to manage an easily applicable way of visually identifying powdery mildew, which so far takes too much time to be done manually and is hence too costly.
 
-Text with short summary of project
+Our dashboards serve our client, Farmy & Foods, in giving a short overview of the models performance, as well as the ability to upload images and download a report with the prediction on which their employees can then decide which trees need treatment and which do not. Maximizing time efficiency and reducing costs.
 
+![Mildew Detector Am I Responsive screenshot](docs/am-i-responsive-mildew-detector.png)
 
 ## Contents
 - [Mildew Detection in Cherry Tree Leaves](#mildew-detection-in-cherry-tree-leaves)
