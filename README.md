@@ -34,7 +34,9 @@ Our dashboards serve our client, Farmy & Foods (a fictitious company), in giving
     - [Fixed Bugs](#fixed-bugs)
     - [Unfixed Bugs](#unfixed-bugs)
   - [Deployment](#deployment)
+    - [Preparations](#preparations)
     - [Render](#render)
+    - [How to fork/clone the project locally on Github:](#how-to-forkclone-the-project-locally-on-github)
   - [Testing](#testing)
   - [Frameworks, Libraries and Programs used](#frameworks-libraries-and-programs-used)
   - [Credits \& Resources](#credits--resources)
@@ -145,18 +147,61 @@ The client is interested in predicting if a cherry tree is healthy or contains p
 
 ## Deployment
 
+### Preparations
+
+- Store all dependencies in ``requirements.txt`` file.
+
 ### Render
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
-- Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-- The project was deployed to Heroku using the following steps.
+> OPTIONAL
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the .slugignore file.
+- Delete Procfile
+- Delete runtime.txt
+- Add, commit, and push your changes to GitHub
+
+> MANDATORY
+
+1. Log in to Render (your github account needs to be connected to your render account) and click on new.
+2. Select Web Service
+3. Search the name of the desired repository and connect it.
+4. Check for the settings to match:
+   - Set the Name
+   - Leave root directory blank
+   - Define Python 3 as the environment
+   - Set the region to your region
+   - Set Branch to main
+5. Set the build command ``pip install -r requirements.txt && ./setup.sh``.
+6. Set the start command ``streamlit run app.py``.
+7. Set the plan (I used the standard plan because of the size of my project and due the free version not being able to process the code properly).
+8. Set the environment variables:
+     - ``PORT``  ``8501``
+     - ``PYTHON_VERSION``  ``3.12.1``
+9.  Select the advanced setting.
+10. Set Auto-Deploy to your preference.
+11. Select **Create Web Service**.
+12. Deploy
+
+The live link can be found here - [Mildew Detector - Deployed website](https://pp5-mildew-detection.onrender.com/)
+
+### How to fork/clone the project locally on Github:
+
+> Need to install dependencies from requirements.txt
+
+Fork the repository:
+
+- Log in (or sign up) to Github.
+- Go to the repository for: Xakkusu/PP5-mildew-detection.
+- Click the Fork button in the top right corner.
+
+Clone repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for: Xakkusu/PP5-mildew-detection.
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+6. A clone of the repository will now be created on your machine.
+
 
 ## Testing
 
