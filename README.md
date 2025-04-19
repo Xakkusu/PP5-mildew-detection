@@ -36,7 +36,7 @@ Our dashboards serve our client, Farmy & Foods (a fictitious company), in giving
   - [Deployment](#deployment)
     - [Render](#render)
   - [Testing](#testing)
-  - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+  - [Frameworks, Libraries and Programs used](#frameworks-libraries-and-programs-used)
   - [Credits](#credits)
     - [Content](#content)
     - [Media](#media)
@@ -159,9 +159,29 @@ The client is interested in predicting if a cherry tree is healthy or contains p
 
 ## Testing
 
-## Main Data Analysis and Machine Learning Libraries
+## Frameworks, Libraries and Programs used
 
-- Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+- [Am I Responsive](https://ui.dev/amiresponsive) Used for the mockup image.
+- [GitHub](https://GitHub.com/) - Used for version control.
+- [Github's Codespacs](https://github.com/features/codespaces) - IDE to develop the website.
+- [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)- Used for troubleshooting, debugging, inspecting page's elements & testing responsiveness.
+- [Render](https://render.com/) - Used to deploy the project.
+- [Code Institute's milestone-project-mildew-detection-in-cherry-leaves repository](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) - Forked for base structure of files and README.
+- [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves) - Used as the source for the dataset.
+- [Jupyter Notebook]() - Used for the notebook's coding environment.
+- [Joblib](https://joblib.readthedocs.io/en/stable/) - Used to load and use images.
+- [NumPy](https://numpy.org/) - Used for arrays.
+- [Pandas](https://pandas.pydata.org/) - Used to create dataframes.
+- [Matplotlib](https://matplotlib.org/) - Used to plot distribution and visualizing data.
+- [Seaborn](https://seaborn.pydata.org/) - Used for graphs, figures and visualizing data.
+- [Plotly](https://plotly.com/) - Used to plot learning curve and visualizing data
+- [Streamlit](https://streamlit.io/) - Used to create dashboards.
+- [Scikit-Learn](https://scikit-learn.org/stable/) - Used for model evaluation.
+- [Tensorflow](https://www.tensorflow.org/) - Used for creating and fitting the model.
+- [Pillow](https://python-pillow.github.io/) - Used for image manipulation.
+- [Keras](Keras) - Used for creating and fitting the model.
+- [Python](https://www.python.org/) - Used as one of the coding languages.
+
 
 ## Credits
 
