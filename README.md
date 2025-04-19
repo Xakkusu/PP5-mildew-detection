@@ -92,7 +92,25 @@ With this accuracy we were able to prove our hypothesis that there is a visible 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+**Business requirement 1 - Data Visualization**
+
+The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+
+* First we clean and prepare the data to be used in Data Visualization.
+* The visualization made it possible to see and understand patterns in the data, even if they were not significant beforehand. The data quality was enhanced and ensured.
+* The outputs from this step were used in the accordingly named dashboard where the user can see the average and difference within the dataset/within the labels. Hence they were visually differentiated between a healthy cherry leaf image and between an image with powdery mildew.
+
+
+**Business requirement 2 - Machine Learning**
+
+The client is interested in predicting if a cherry tree is healthy or contains powdery mildew. 
+
+* First we focused on what functions etc. to use for our model according to our business case.
+* We used our before splitted dataset (split into test- train & validation set) which were labeled into healthy and powdery_mildew images.
+* We trained and optimized the model through these datasets.
+* We validated our model to see if it is accurate for real time prediction.
+* We created a dashboard to display our model's performance for the client to see how effective the model is.
+* We created a dashboard to conduct the prediction on uploaded images and for the user to download a report about this prediction.
 
 ## User Experience
 
