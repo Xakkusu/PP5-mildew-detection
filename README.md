@@ -37,9 +37,10 @@ Our dashboards serve our client, Farmy & Foods (a fictitious company), in giving
     - [Render](#render)
   - [Testing](#testing)
   - [Frameworks, Libraries and Programs used](#frameworks-libraries-and-programs-used)
-  - [Credits](#credits)
+  - [Credits \& Resources](#credits--resources)
     - [Content](#content)
-    - [Media](#media)
+    - [Other student's repositories](#other-students-repositories)
+    - [Resources](#resources)
   - [Acknowledgements](#acknowledgements)
 
 
@@ -183,21 +184,23 @@ The client is interested in predicting if a cherry tree is healthy or contains p
 - [Python](https://www.python.org/) - Used as one of the coding languages.
 
 
-## Credits
-
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
+## Credits & Resources
 
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- The text in for the summary dashboard was compiled from [this article from EOS Data Analytics](https://eos.com/blog/powdery-mildew/) about Powdery Mildew,  [Wikipedia's Powdery mildew](https://en.wikipedia.org/wiki/Powdery_mildew) article & from [this publication from Washington State University](https://treefruit.wsu.edu/crop-protection/disease-management/cherry-powdery-mildew/)  about Cherry Powdery Mildew.
 
-### Media
+### Other student's repositories
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+- [Cla-cif's cherry powdery mildew detector repository](https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector) as recommended by my mentor for structure and what is needed in this project. When I got stuck their code was used to see where I made mistakes.
+- [HughKeenan's Detection of mildew on cherry leaves repository](https://github.com/HughKeenan/CherryPicker) as recommended by my mentor for structure and what is needed in this project. When I got stuck their code was used to see where I made mistakes.
+
+### Resources
+
+- Tutorials from Code Institute's lessons that we learned in the course of our diploma-education used to understand the basic concepts of Python. Especially topics from the Malaria Detector project were helpful.
+- [Stack Overflow](https://stackoverflow.co/)
+- [W3Schools](https://www.w3schools.com/)
+
 
 ## Acknowledgements
 
