@@ -18,12 +18,9 @@ Our dashboards serve our client, Farmy & Foods (a fictitious company), in giving
   - [Dataset Content](#dataset-content)
   - [Business Requirements](#business-requirements)
   - [Project Hypotheses and Validation](#project-hypotheses-and-validation)
-    - [Hypothesis 1](#hypothesis-1)
-    - [Validation 1](#validation-1)
-    - [Hypothesis 2](#hypothesis-2)
-    - [Validation 2](#validation-2)
-    - [Hypothesis 3](#hypothesis-3)
-    - [Validation 3](#validation-3)
+    - [Hypothesis \& Validation 1](#hypothesis--validation-1)
+    - [Hypothesis \& Validation 2](#hypothesis--validation-2)
+    - [Hypothesis \& Validation 3](#hypothesis--validation-3)
   - [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
   - [User Experience](#user-experience)
   - [ML Business Case](#ml-business-case)
@@ -63,32 +60,33 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Project Hypotheses and Validation
 
-### Hypothesis 1
+### Hypothesis & Validation 1
 
-We suspect that there is a visual difference between healthy and mildew-infected leaves.
+> 1. Hypothesis: We suspect that there is a visual difference between healthy and mildew-infected leaves.
 
+We built an average image study with images of healthy and powdery mildew infected leaves.
 
-### Validation 1
+**Outcome**: Even though it was not a significant difference to the human eye there was a slight visual difference as can be seen on the average and variability images
 
-Even though it was not a significant difference to the human eye there was a slight visual difference as can be seen on the average and variability images.
-
-
-### Hypothesis 2
-
-We suspect that the visual differentiation manifests in that leaves that are infected by mildew have a visible differentiation from non-infected leaves which commonly looks like a white powdery substance on the leaves compared to healthy green leaves.
-
-### Validation 2
-
-As can be seen on the leaves visualizer dashboard the mildew infected leaves have white powdery spots on its topcoat and they are less vibrant/saturated greenish than the healthy leaves images.
+.
 
 
-### Hypothesis 3
+### Hypothesis & Validation 2
 
-We suspect that we can differentiate healthy from infected leaves through an ML model with an average image study using image classification, a binary classifier with an 97 % accuracy.
+> 2. Hypothesis: We suspect that the visual differentiation manifests in that leaves that are infected by mildew have a visible differentiation from non-infected leaves which commonly looks like a white powdery substance on the leaves compared to healthy green leaves.
 
-### Validation 3
+In an image study we plot the average images next to one another to compare how they look like and we create an image montage for each label to see similiarities between singular images of the same label.
 
-We were able to create a model with an 98,93% accuray to predict whether an image of a leaf has powdery mildew on the leaf or not.
+**Outcome**: As can be seen on the leaves visualizer dashboard the mildew infected leaves have white powdery spots on its topcoat and they are less vibrant/saturated greenish than the healthy leaves images.
+
+
+### Hypothesis & Validation 3
+
+> 3. Hypothesis: We suspect that we can differentiate healthy from infected leaves through an ML model with an 97 % accuracy.
+
+We create a machine learning model with an average image study using image classification, a binary classifier, the sigmoid activation function  
+
+**Outcome**: We were able to create a model with an 98,93% accuray to predict whether an image of a leaf has powdery mildew on the leaf or not.
 With this accuracy we were able to prove our hypothesis that there is a visible differentiation from mildew infected leaves on which our ML model was built on. Even non-infected leaves and powdery to the human eyes the pattern of the though average/variability images was not that significant using the ML-model will minimize human error during harvest.
 
 
