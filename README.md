@@ -121,20 +121,63 @@ The client is interested in predicting if a cherry tree is healthy or contains p
 
 - In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
 
-## Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+## Dashboard Design
 
 ### Summary Page
 
+![Summary Page Screenshot](docs/dashboard-design/summary-page-dd.png)
+
+- We provide a quick summary of the project, what business case our models works towards, give information about the dataset and go over the business requirements.
+- The user should know all important points about the project and what problem the model will help solve.
+- A link to the database as well as to the README of this project is provided as well.
+
 ### Leaves Visualizer Page
+
+![Data Visualizer Page Screenshot](docs/dashboard-design/visualizer-page-dd.png)
+
+- This page handels the first business requirement: **The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.** The client can hence further use this page for their requirement.
+
+![Data Visualizer Checkbox Selection Page Gif](docs/dashboard-design/visualizer-checkboxDD.gif)
+
+- By checking off the checkboxes the user can go through various images:
+  - Difference between average and variability image - images are displayed side by side and on top of one another to compare them
+  - Differences between average mildew infected and average healthy leaves - images are displayed side by side to compare them
+  - Image Montage -choose label from dropdown menu and the montage will appear
+- The machine learning model is built on these findings.
 
 ### Mildew Detection Page
 
+![Mildew Detection Page Screenshot](docs/dashboard-design/detector-page-dd.png)
+
+- This page handels the second business requirement: **The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.** The client can hence further use this page for future images to run detection on.
+- The user can upload PNG images to detect whether powdery mildew is present or not.
+- A link to the dataset it provided in case the user does not have their own image to draw a report from.
+
+![Mildew Detection Page Screenshot](docs/dashboard-design/detector1-page-dd.png)
+![Mildew Detection Page Screenshot](docs/dashboard-design/detector2-page-dd.png)
+
+- The user can upload as many PNG-images as they like.
+- For every singular image there is a message about the powdery-mildew status and a diagram.
+- At the bottom of the page the user can download their report.
+
 ### Project Hypothesis Page
 
+![Hypothesis Page Screenshot](docs/dashboard-design/hypotheses-page-dd.png)
+
+- This page provides an explanation of our assumptions before starting our project, as shown in our three hypotheses.
+- After finishing our Model we drew our conclusions in the validation sections on how and why they were validated.
+- You can read more on our hypothesis [here](#project-hypotheses-and-validation).
+
 ### ML Performance Metrics Page
+
+![ML Performance Metrics Page Screenshot](docs/dashboard-design/performance1-page-dd.png)
+![ML Performance Metrics Page Screenshot](docs/dashboard-design/performance2-page-dd.png)
+
+- This page provides more insights into our model and the data that was used.
+- We display the label frequencies and how our datasets are divided.
+- We display our accuracy and models over epochs shown in the diagrams.
+- We display our accuracy which is vital for answering the second business requirement as well as our third hypothesis.
 
 
 ## Bugs
