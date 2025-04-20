@@ -179,14 +179,28 @@ The client is interested in predicting if a cherry tree is healthy or contains p
 - We display our accuracy and models over epochs shown in the diagrams.
 - We display our accuracy which is vital for answering the second business requirement as well as our third hypothesis.
 
-
 ## Bugs
 
 ### Fixed Bugs
 
+1. While working in my jupyter notebook the Codespace IDE kept on crashing multiple times, maybe because of the data size, yet there was never an error message which explained why. I had to redo/restart multiple codespaces completely anew which meant I had to install and go through all the previous steps continuously and ran everything from the beginning due to it. After it did not crash after some time, everything had to be pushed again.
+2. When I created the new codespace while pushing the outputs from jupyter notebook two (Data Visualization) only a few files (4) were pushed instead of all that were in my outputs folder in my IDE. After trying to redo the whole output folder content multiple times and pushing files by themself I rerun all notebooks again and pushed after every new output file was created to check which was causing problems, none did... So I do not know how that bug happened or how it would have been solved. There were also no problems with v2 output files, so I guess the IDE had some troubles at the time.
+3. While working on the third Jupyter Notebook and trying to fit my model the Kernel kept crashing. I rerun all notebooks but once it crashed during fitting it started crashing on most code blocks. I cleared caches, tried to look for bugs in my libraries, checked my memory and made space for my datasets. Once that was cleared,  rerun all notebooks without errors and pushed it. 
+4. With my first I had a problem with the prediction. It always predicted the wrong label but in a correct way. So it always said *healthy* for infected ones and vice versa. As I did not know the ``softmax`` activation function that well and I used it in my first version, I wanted to see if that would be the problem and switched to the ``sigmoid`` activation function as done in the walkthrough and it was thus easier to understand for me, then the model predicted correctly.
+5. When running detection on more than two images I got the following error message: 
+![Error Message for Bug](docs/bugfix.png)
+  
+    As stated in the error message I implemented keys for a large number, so a large number of images could be predicted at once. The following code was used for this:
+
+    ``keys = [x for x in range(100000)]``
+
+    ``st.plotly_chart(fig, key=random.sample(keys, 1))``
+6. Not really a bugfix, but when I did the malaria project I already was not able to deploy it on Heroku, so my mentor recommended [render.com](https://render.com/) so I saved a lot of bugfixes through using this.
+
+
 ### Unfixed Bugs
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+So far there are no known bugs.
 
 ## Deployment
 
