@@ -119,7 +119,17 @@ The client is interested in predicting if a cherry tree is healthy or contains p
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+- Both aboved mentioned business requirements were answered.
+- The client is interested in a machine learning model to predict on  the status of leaf images: healthy and powdery-mildew infected.
+- The current method for finding this out is too time and hence too cost consuming, so the client is trying to minimize their costs.
+- How the model is set-up, is up to us, however the business requirements and the accuracy rate of 97% have to be met.
+- The client wants an interactive dashboard to upload images whenever, wherever (as long as there is an internet connection).
+- The client made a dataset available with labels: healthy and powdery-mildew infected.
+- From these labels we proposed a binary classifier.
+- The model predicted whether the image of a leaf is accurate with a 98.9% accuracy rate.
+- The client can predict as many images at once as they have & draw a report from it, on which they can then decide on how to handel powdery-mildew infected plants.
+
+> We conclude that our model meets the business requirements as well as all other criteria from our client.
 
 
 ## Dashboard Design
