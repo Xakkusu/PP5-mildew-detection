@@ -23,6 +23,8 @@ Our dashboards serve our client, Farmy & Foods (a fictitious company), in giving
     - [Hypothesis \& Validation 3](#hypothesis--validation-3)
   - [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
   - [User Experience](#user-experience)
+    - [Epics](#epics)
+    - [User Stories](#user-stories)
   - [ML Business Case](#ml-business-case)
   - [Dashboard Design](#dashboard-design)
     - [Summary Page](#summary-page)
@@ -116,6 +118,124 @@ The client is interested in predicting if a cherry tree is healthy or contains p
 * We created a dashboard to conduct the prediction on uploaded images and for the user to download a report about this prediction.
 
 ## User Experience
+
+The agile methodology was applied for this project. The To-Do's were split epics and user stories and completed through sprints. To graphically represent this and not just have each sprint with its goals, tests etc on paper Github's project board was used to show this.Through our commits one can see that after each small step that worked, and through a lot of testing and fixing the code in between, one can see how this framework was well implemented into each step/sprint of the project.
+
+>[Project Board](https://github.com/users/Xakkusu/projects/6)
+
+### Epics
+
+The whole process to create the service for the client from start to finish were split into three epics to meet the clients business requirement:
+
+1. EPIC: Information gathering, data collection, data visualization, cleaning, and preparation.
+   Define requirements and assess the business case with the information from the client. Gather all necessary data, install all necessary libraries and import them, clean the data, split it and prepare it to be used in the model.
+2. EPIC: Model training, optimization and validation.
+   Use the prepared data, augment the images to train and fit your model. Once that is done, validate it and create  images to be used in ML performance metrics.
+3. EPIC: Dashboard planning, designing, development, deployment and release.
+   Plan a dashboard that meets the clients needs and create an interface that is easy to use, keep in mind to answer the business requirements and validate hypotheses. Develop every page/dashboard that is needed, once this is done deploy it and make it accessible for users.
+
+### User Stories
+
+**User Stories from the first epic**:
+
+- As a developer I can get access to the dataset within the IDE so that I can use it to test the hypotheses for the client.
+  
+  Tasks:
+  - Download data from Kaggle
+  - Import data to the IDE/repo
+  - Test if data is usable in project environment
+- As a developer I can collect data so that I can use the working cleaned data.
+  
+  Tasks:
+  - Clean dataset
+  - Split dataset into train-, test- and validation- sets
+  - Prepare data for further use
+- As a developer I can visualize data so that the Business Requirement 1 is fulfilled
+  
+  Tasks:
+  - Set data directory
+  - Create and save Image Shape
+  - Create average and variability of images per label
+  - Create a difference between average mildew-infected and average uninfected leave images
+  - Create Image Montage
+  - Check if anything from first epic is left undone
+
+**User Stories from the second epic**:
+
+- As a developer I can create, fit and train the model with data so it learns patterns to predict information from the data.
+  
+  Tasks:
+  - Image Augmentation
+  - use TensorFlow model to create classification of the data
+  - use CNN
+  - Save model
+- As a developer I can optimize the model so that the accuracy increases.
+  
+  Tasks:
+  - analyze over- & underfitting of the data
+  - fit the data accordingly through repetition, and changing parameters if necessary
+- As a developer I can test if the model is valid so that the predictions have a reliable accuracy and hence successfully answer the second business requirement.
+  
+  Tasks:
+  - evaluate model
+  - test with additional data
+  - visualize applied metrics
+  - Check if anything from second epic is left undonee
+
+**User Stories from the third epic**:
+
+- As a user I can navigate through pages and their contents easily so that I understand the outcome of the study and use the machine learning abilities with as little effort as possible.
+  
+  Tasks:
+  - Plan easy navigation
+  - Plan simple consistent design
+  - Plan easily written and well structured content, that is developed one after the other
+  - Plan pages to be accessible as possible
+
+- As a client I can get a quick overview of the product so that the outcome is easily understood.
+  
+  Tasks:
+  - Create a summary project page
+  - Create content for the summary page
+- As a client I can see a montage and images of the data so that my first business requirement is answered.
+  
+  Tasks:
+  - Create a visualization page
+  - Create content for the visualization page
+- As a client I can upload additional data to be tested so that I can use the model for future data to predict if fungus is present or not and my second business requirement being answered through it.
+  
+  Tasks:
+  - Create a detector page
+  - Create content for the detector page
+- As a client I can see all hypotheses on which the model relies on so that I can understand its validation and the model's creation better.
+  
+  Tasks:
+  - Create a hypotheses page
+  - Create content for the hypotheses page
+- As a client I can look into the models metrics into detail so that I understand the model, its metrics, its performance and how it works.
+  
+  Tasks:
+  - Create a metric page
+  - Create content for the metric page
+- As a developer I can access the project outside of the IDE so that it can be used to present output to the client.
+  
+  Tasks:
+  - deploy in render.com
+- As a developer I can present the final product so that the client pays for my effort and can use my project outcome.
+  
+  Tasks:
+  - Implement User Testing
+  - Final Deployment
+  - Make product available to others through putting its link in README
+
+**User Stories outside of epics**:
+
+- Project outline: As a developer I can create a README with all its necessary content so that it can meet all the business requirements for a successful product.
+  
+  Tasks:
+  - Create README structure
+  - Come up with hypotheses that meet business requirements
+  - Write README to "sell" the project to the client
 
 ## ML Business Case
 
