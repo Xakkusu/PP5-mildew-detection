@@ -40,6 +40,15 @@ Our dashboards serve our client, Farmy & Foods (a fictitious company), in giving
     - [Render](#render)
     - [How to fork/clone the project locally on Github:](#how-to-forkclone-the-project-locally-on-github)
   - [Testing](#testing)
+    - [User Story Testing](#user-story-testing)
+    - [Manual Testing](#manual-testing)
+      - [Menu](#menu)
+      - [Mildew Project Summary](#mildew-project-summary)
+      - [Leaves Visualizer](#leaves-visualizer)
+      - [Mildew Detection](#mildew-detection)
+      - [Project Hypothesis](#project-hypothesis)
+      - [ML Performance Metrics](#ml-performance-metrics)
+    - [PEP8](#pep8)
   - [Frameworks, Libraries and Programs used](#frameworks-libraries-and-programs-used)
   - [Credits \& Resources](#credits--resources)
     - [Content](#content)
@@ -212,7 +221,7 @@ The whole process to create the service for the client from start to finish were
   Tasks:
   - Create a hypotheses page
   - Create content for the hypotheses page
-- As a client I can look into the models metrics into detail so that I understand the model, its metrics, its performance and how it works.
+- As a client I can look into the models metrics in detail so that I understand the model, its metrics, its performance and how it works.
   
   Tasks:
   - Create a metric page
@@ -391,6 +400,175 @@ Clone repository:
 
 
 ## Testing
+
+### User Story Testing
+
+**User Stories from the first epic**:
+
+- As a developer I can get access to the dataset within the IDE so that I can use it to test the hypotheses for the client.
+  
+  The developer has access to the dataset and was able to download the dataset, import it into IDE and work  with it.
+- As a developer I can collect data so that I can use the working cleaned data.
+  
+  The developer was able to collect, clean and split the dataset, so it was prepared for further use.
+- As a developer I can visualize data so that the Business Requirement 1 is fulfilled
+  
+  *Reminder - First Business Requirement: The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.*
+
+  The developer was able to set the data directory, create various plots/images which were saved and created images to answer the first business requirement.
+
+**User Stories from the second epic**:
+
+- As a developer I can create, fit and train the model with data so it learns patterns to predict information from the data.
+  
+  The developer was able use image augmentation  to create, train and fit the model, which was then saved for further use.
+- As a developer I can optimize the model so that the accuracy increases.
+  
+  The developer was able to optimize the model through fitting the model until a certain accuracy was met.
+- As a developer I can test if the model is valid so that the predictions have a reliable accuracy and hence successfully answer the second business requirement.
+  
+  *Reminer - Second Business Requirement: The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.*
+
+  The developer evaluated the model and tested it with additional data. The developer tested it in the third jupyter notebook with 30 different pointers per label. The developer saved the learning curves and was able to answer the second business requirement.
+
+**User Stories from the third epic**:
+
+- As a user I can navigate through pages and their contents easily so that I understand the outcome of the study and use the machine learning abilities with as little effort as possible.
+  
+  The user can use the navigation on the left side of every page, which can be collapsed. Moreover, the content was written in a simple way which is easy to understand.
+- As a client I can get a quick overview of the product so that the outcome is easily understood.
+  
+  Through the summary page the client can get a quick and short overview of the project, the dataset and the business requirements.
+- As a client I can see a montage and images of the data so that my first business requirement is answered.
+  
+  Through the visualizer page the client can see all images that were created to answer the first business requirements. The client can also look at image montages depending on the label.
+- As a client I can upload additional data to be tested so that I can use the model for future data to predict if fungus is present or not and my second business requirement being answered through it.
+  
+  Through the mildew detector page the client can upload their own imagesor get some from the link to the dataset and run predictions on it. Thus the second business requirement is answered and additionally the client can download a report from their predictions.
+- As a client I can see all hypotheses on which the model relies on so that I can understand its validation and the model's creation better.
+  
+  Through the hypothesis page the client can get a quick and short overview of all hypotheses and how they were validated.
+- As a client I can look into the models metrics in detail so that I understand the model, its metrics, its performance and how it works.
+  
+  Through the ML performance page the client can look into various information about the models metrics and performance to better understand its accuracy.
+- As a developer I can access the project outside of the IDE so that it can be used to present output to the client.
+  
+  The developer deployed the project via render to be able to present it outside of the IDE.
+- As a developer I can present the final product so that the client pays for my effort and can use my project outcome.
+  
+  The developer implemented user testing, made final changes that were deployed and put the project's link into the README of the repository for everyone to access.
+
+**User Stories outside of epics**:
+
+- Project outline: As a developer I can create a README with all its necessary content so that it can meet all the business requirements for a successful product.
+  
+  The developer created an informative README with all necessary input.
+
+### Manual Testing
+
+#### Menu
+|     | User Actions           | Expected Results | Y/N | Comments    |
+|-------------|------------------------|------------------|------|-------------|
+| Navbar     |                        |                  |      |             |
+| 1           | Click on the < arrow| Menu collapses | Y |          |
+| 2           | Click on the > arrow| Menu expands | Y |          |
+| 3           | Click on Mildew Project Summary | Be redirected to the summary page in the same tab | Y |          |
+| 4           | Click on Leaves Visualizer | Be redirected to the Visualizer page in the same tab | Y |          |
+| 5           | Click on Mildew Detection | Be redirected to the Detection page in the same tab | Y |          |
+| 6           | Click on Project Hypothesis | Be redirected to the Hypothesis page in the same tab | Y |          |
+| 7           | Click on ML Performance Metrics | Be redirected to the Performance page in the same tab | Y |          |
+
+#### Mildew Project Summary
+
+|     | User Actions           | Expected Results | Y/N | Comments    |
+|-------------|------------------------|------------------|------|-------------|
+| 1           | Click on Kaggle link | Be redirected to the Kaggle dataset page in a separate tab | Y |          |
+| 2           | Click on README file link | Be redirected to the README in the repository page in a separate tab | Y |          |
+
+#### Leaves Visualizer
+
+|     | User Actions           | Expected Results | Y/N | Comments    |
+|-------------|------------------------|------------------|------|-------------|
+| 1           | Click on README file link | Be redirected to the README in the repository page in a separate tab | Y |          |
+| 2           | Click on Difference between average and variability image checkbox | Dropdown with according images appears | Y |          |
+| 3           | Click on Difference between average mildew infected and average healthy checkbox | Dropdown with according images appears | Y |          |
+| 4           | Click on Show image montage of mildew infected or average healthy leaves checkbox | Dropdown with according image montage to create appears | Y |          |
+| 5           | Click on label | Dropdown with label can be chosen | Y |          |
+| 6           | Click on Create Montage | Image montage according to chosen label is  displayed | Y |          |
+
+#### Mildew Detection
+
+|     | User Actions           | Expected Results | Y/N | Comments    |
+|-------------|------------------------|------------------|------|-------------|
+| 1           | Click on Kaggle link | Be redirected to the Kaggle dataset page in a separate tab | Y |          |
+| 2           | Click on drag and drop field | Pop-up of own folder to do upload images open  | Y |          |
+| 3           | Click on Browse fields | Pop-up of own folder to do upload images open  | Y |          |
+| 4           | Drag images in drag and drop field | Run detector on files, predictions appear below the field  | Y |          |
+| 5           | Click on open in own folder | Run detector on files, predictions appear below the field  | Y |          |
+| 6           | Click on Download report link | Download CSV Report of the predictions of the files  | Y |          |
+| 7           | Click on X next to single files | File is deleted from Detection  | Y |          |
+
+#### Project Hypothesis
+
+No manual testing needed as there are no interactive elements.
+
+#### ML Performance Metrics
+
+No manual testing needed as there are no interactive elements.
+
+### PEP8
+
+No errors were returned for all python files from the [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) testing:
+
+<details>
+<summary>app_pages</summary>
+No errors or warnings for all python files in  the app_pages folder.
+
+multipage.py:
+
+<img src="docs/testing/multipage.png" alt="multipage.py PEP8 result">
+
+
+page_leaves_detector.py:
+
+<img src="docs/testing/page_leaves_detector.png" alt="page_leaves_detector.py PEP8 result">
+
+page_leaves_ml_performance.py:
+
+<img src="docs/testing/page_leaves_ml_performance.png" alt="page_leaves_ml_performance.py PEP8 result">
+
+page_leaves_project_hypothesis.py:
+
+<img src="docs/testing/page_leaves_project_hypothesis.png" alt="page_leaves_project_hypothesis.py PEP8 result">
+
+page_leaves_summary.py:
+
+<img src="docs/testing/page_leaves_summary.png" alt="page_leaves_summary.py PEP8 result">
+
+page_leaves_visualizer.py:
+
+<img src="docs/testing/page_leaves_visualizer.png" alt="page_leaves_visualizer.py PEP8 result">
+
+</details>
+
+<details>
+<summary>src</summary>
+No errors or warnings for all python files in the src folder.
+
+data_management.py:
+
+<img src="docs/testing/data_management.png" alt="data_management.py PEP8 result">
+
+
+evaluate_clf.py:
+
+<img src="docs/testing/evaluate_clf.png" alt="evaluate_clf.py PEP8 result">
+
+predictive_analysis.py:
+
+<img src="docs/testing/predictive_analysis.png" alt="predictive_analysis.py PEP8 result">
+
+</details>
 
 ## Frameworks, Libraries and Programs used
 
